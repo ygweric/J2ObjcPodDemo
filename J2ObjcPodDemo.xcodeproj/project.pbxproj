@@ -13,6 +13,8 @@
 		5F33C1741DAEDFBD0069F1DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F33C1721DAEDFBD0069F1DE /* Main.storyboard */; };
 		5F33C1761DAEDFBD0069F1DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F33C1751DAEDFBD0069F1DE /* Assets.xcassets */; };
 		5F33C1791DAEDFBD0069F1DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F33C1771DAEDFBD0069F1DE /* LaunchScreen.storyboard */; };
+		5F33C19D1DAEF7580069F1DE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F33C19C1DAEF7580069F1DE /* libz.tbd */; };
+		5F33C19F1DAEF7620069F1DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F33C19E1DAEF7620069F1DE /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		5F33C1851DAEDFBD0069F1DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F33C18E1DAEDFBD0069F1DE /* J2ObjcPodDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J2ObjcPodDemoUITests.swift; sourceTree = "<group>"; };
 		5F33C1901DAEDFBD0069F1DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F33C19C1DAEF7580069F1DE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		5F33C19E1DAEF7620069F1DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C4C309528B5E053D3F19C03C /* Pods_J2ObjcPodDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_J2ObjcPodDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E07FE26C100F84C1105CC292 /* Pods-J2ObjcPodDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-J2ObjcPodDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-J2ObjcPodDemo/Pods-J2ObjcPodDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -37,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F33C19F1DAEF7620069F1DE /* UIKit.framework in Frameworks */,
+				5F33C19D1DAEF7580069F1DE /* libz.tbd in Frameworks */,
 				1635AEC78B749C6EE5F878A1 /* Pods_J2ObjcPodDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +53,8 @@
 		4B7FCAD5FDD9136E2B4ADF42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5F33C19E1DAEF7620069F1DE /* UIKit.framework */,
+				5F33C19C1DAEF7580069F1DE /* libz.tbd */,
 				C4C309528B5E053D3F19C03C /* Pods_J2ObjcPodDemo.framework */,
 			);
 			name = Frameworks;
@@ -361,6 +369,7 @@
 			baseConfigurationReference = 16291B3EB2BCDF5D5A763C15 /* Pods-J2ObjcPodDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				DEVELOPMENT_TEAM = 77SM2DKNM6;
 				HEADER_SEARCH_PATHS = (
 					/Users/yangeric/Applications/j2objc/current/include,
@@ -373,6 +382,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dogkk.J2ObjcPodDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				USE_HEADERMAP = YES;
 			};
 			name = Debug;
 		};
@@ -381,6 +391,7 @@
 			baseConfigurationReference = E07FE26C100F84C1105CC292 /* Pods-J2ObjcPodDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				DEVELOPMENT_TEAM = 77SM2DKNM6;
 				HEADER_SEARCH_PATHS = (
 					/Users/yangeric/Applications/j2objc/current/include,
@@ -392,6 +403,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dogkk.J2ObjcPodDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				USE_HEADERMAP = YES;
 			};
 			name = Release;
 		};

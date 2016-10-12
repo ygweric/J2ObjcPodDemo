@@ -1,6 +1,0 @@
-framework module j2objc_j2objc_debug {
-  umbrella header "j2objc-j2objc-debug-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.libraries = 'ObjC', 'guava', 'javax_inject', 'jre_emul', 'jsr305', 'z', 'icucore'
   spec.source_files = 'src/main/objc/**/*.{h,m}'
   spec.xcconfig = {
-    'HEADER_SEARCH_PATHS' => '/Users/yangeric/Applications/j2objc/current/include /Users/yangeric/Applications/j2objc/current/include/guava /Users/yangeric/mIOS/360-j2objc/build/j2objcOutputs/src/main/objc'
+    'HEADER_SEARCH_PATHS' => '/Users/yangeric/Applications/j2objc/current/include /Users/yangeric/Applications/j2objc/current/include/guava j2objcOutputs/src/main/objc'
   }
   spec.ios.xcconfig = {
     'LIBRARY_SEARCH_PATHS' => '/Users/yangeric/Applications/j2objc/current/lib'

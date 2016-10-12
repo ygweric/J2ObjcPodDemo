@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "./j2objcOutputs"
 
 SPEC CHECKSUMS:
-  j2objc-j2objc-debug: 5027fa2dcfb223e36f0ac38dac835c9eaf74a6b3
+  j2objc-j2objc-debug: e99ccb1836cb2798b295399ed075dba6cec3474f
 
 COCOAPODS: 0.39.0
