@@ -67,16 +67,17 @@ J2OBJC_IGNORE_DESIGNATED_END
 
 + (const J2ObjcClassInfo *)__metadata {
   static const J2ObjcMethodInfo methods[] = {
-    { "setIdWithJavaLangLong:", "setId", "V", 0x401, NULL, NULL },
-    { "getId", NULL, "Ljava.lang.Long;", 0x401, NULL, NULL },
-    { "isEqual:", "equals", "Z", 0x1, NULL, NULL },
-    { "description", "toString", "Ljava.lang.String;", 0x1, NULL, NULL },
-    { "getIdValueWithComGoogleCommonBaseOptional:", "getIdValue", "Lcom.google.common.base.Optional;", 0x9, NULL, "(Lcom/google/common/base/Optional<+Lcom/agrimap/mobile/shared/api/ModelId;>;)Lcom/google/common/base/Optional<Ljava/lang/Long;>;" },
-    { "getIdValueWithComAgrimapMobileSharedApiModelId:", "getIdValue", "Lcom.google.common.base.Optional;", 0x9, NULL, "(Lcom/agrimap/mobile/shared/api/ModelId;)Lcom/google/common/base/Optional<Ljava/lang/Long;>;" },
-    { "getIdValuesWithJavaUtilCollection:", "getIdValues", "Lcom.google.common.base.Optional;", 0x9, NULL, "(Ljava/util/Collection<+Lcom/agrimap/mobile/shared/api/ModelId;>;)Lcom/google/common/base/Optional<Ljava/util/List<Ljava/lang/Long;>;>;" },
-    { "init", "ModelId", NULL, 0x1, NULL, NULL },
+    { "setIdWithJavaLangLong:", "V", 0x401, 0, 1, -1, -1, -1, -1 },
+    { "getId", "LJavaLangLong;", 0x401, -1, -1, -1, -1, -1, -1 },
+    { "isEqual:", "Z", 0x1, 2, 3, -1, -1, -1, -1 },
+    { "description", "LNSString;", 0x1, 4, -1, -1, -1, -1, -1 },
+    { "getIdValueWithComGoogleCommonBaseOptional:", "LComGoogleCommonBaseOptional;", 0x9, 5, 6, -1, 7, -1, -1 },
+    { "getIdValueWithComAgrimapMobileSharedApiModelId:", "LComGoogleCommonBaseOptional;", 0x9, 5, 8, -1, 9, -1, -1 },
+    { "getIdValuesWithJavaUtilCollection:", "LComGoogleCommonBaseOptional;", 0x9, 10, 11, -1, 12, -1, -1 },
+    { "init", NULL, 0x1, -1, -1, -1, -1, -1, -1 },
   };
-  static const J2ObjcClassInfo _ComAgrimapMobileSharedApiModelId = { 2, "ModelId", "com.agrimap.mobile.shared.api", NULL, 0x401, 8, methods, 0, NULL, 0, NULL, 0, NULL, NULL, NULL };
+  static const void *ptrTable[] = { "setId", "LJavaLangLong;", "equals", "LNSObject;", "toString", "getIdValue", "LComGoogleCommonBaseOptional;", "(Lcom/google/common/base/Optional<+Lcom/agrimap/mobile/shared/api/ModelId;>;)Lcom/google/common/base/Optional<Ljava/lang/Long;>;", "LComAgrimapMobileSharedApiModelId;", "(Lcom/agrimap/mobile/shared/api/ModelId;)Lcom/google/common/base/Optional<Ljava/lang/Long;>;", "getIdValues", "LJavaUtilCollection;", "(Ljava/util/Collection<+Lcom/agrimap/mobile/shared/api/ModelId;>;)Lcom/google/common/base/Optional<Ljava/util/List<Ljava/lang/Long;>;>;" };
+  static const J2ObjcClassInfo _ComAgrimapMobileSharedApiModelId = { "ModelId", "com.agrimap.mobile.shared.api", ptrTable, methods, NULL, 7, 0x401, 8, 0, -1, -1, -1, -1, -1 };
   return &_ComAgrimapMobileSharedApiModelId;
 }
 
